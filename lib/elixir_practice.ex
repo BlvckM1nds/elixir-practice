@@ -7,7 +7,6 @@ defmodule ElixirPractice do
   end
 
   def main do
-    x = 5
-    IO.puts(x)
+    IO.puts(Integer.gcd(21, 7))
   end
 end
