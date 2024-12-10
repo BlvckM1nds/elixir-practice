@@ -1,4 +1,4 @@
-# ElixirPractice
+# Elixir Practice
 
 **TODO: Add description**
 
