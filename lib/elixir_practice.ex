@@ -7,6 +7,34 @@ defmodule ElixirPractice do
   end
 
   def main do
-    IO.puts(Integer.gcd(21, 7))
+    # memberships = {:bronze, :silver}
+    # memberships = Tuple.append(memberships, :gold)
+    # IO.inspect(memberships)
+
+    # prices = {5, 10, 15}
+    # avg = Tuple.sum(prices) / tuple_size(prices)
+
+    # IO.puts(
+    #   "The average from #{elem(prices, 0)}, #{elem(prices, 1)}, and #{elem(prices, 2)} is #{avg}"
+    # )
+
+    memberships = %{
+
+    }
+
+    users = [
+      {"Caleb", :gold},
+      {"John", :silver},
+      {"Daphne", :bronze}
+    ]
+
+    Enum.each(users, fn {n, m} ->
+      IO.puts("#{n} has #{m} membership")
+    end)
+
+    # user = {"Caleb", elem(memberships, 2)}
+    # IO.inspect(user)
+    # {name, membership} = user
+    # IO.puts("#{name} has #{membership} membership")
   end
 end
