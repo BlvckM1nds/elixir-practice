@@ -1,18 +1,13 @@
 defmodule ElixirPractice do
-  @moduledoc """
-  Documentation for `ElixirPractice`.
-  """
+  use Application
 
-  @doc """
-  Hello world.
+  def start(_type, _args) do
+    ElixirPractice.main()
+    Supervisor.start_link([], strategy: :one_for_one)
+  end
 
-  ## Examples
-
-      iex> ElixirPractice.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def main do
+    x = 5
+    IO.puts(x)
   end
 end
